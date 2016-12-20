@@ -6,35 +6,30 @@ function close_modal() {
   document.getElementById('my_modal').style.display = "none";
 }
 
-var slideIndex = 1;
-show_slides(slideIndex);
+var slide_index = 1;
+show_slides(slide_index);
 
 function plus_slides(n) {
-  show_slides(slideIndex += n);
+  show_slides(slide_index += parseInt(n));
 }
 
 function current_slide(n) {
-  show_slides(slideIndex = n);
+  show_slides(slide_index = parseInt(n));
 }
 
 function show_slides(n) {
   var i;
   var slides = document.getElementsByClassName("my_slides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
   if (n > slides.length) {
-  	slideIndex = 1
+  	slide_index = 1
   }
   if (n < 1) {
-  	slideIndex = slides.length
+  	slide_index = slides.length
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
+  slides[slide_index-1].style.display = "block";
 }
 
 // Show lightbox when clicking on picture
