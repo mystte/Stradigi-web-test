@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1982px) {
+    /* Remove margins and padding from the list, and add a black background color */
+    ul.bottomnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e1e1e;
+        position: absolute;
+        left: 22%;
+        top: 611px;
+        width: 80%;
+    }
+
+    /* Float the list items side by side */
+    ul.bottomnav li {
+        float: left;
+        margin-left: 45px;
+    }
+
+    /* Style the links inside the list items */
+    ul.bottomnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of links on hover */
+    ul.bottomnav li a:hover {
+        color: #b49517;
+    }
+
+    /* Hide the list item that contains the link that should open and close the topnav on small screens */
+    ul.bottomnav li.icon {
+        display: none;
+    }
+
+    /* Apple Store Image */
+    img.appstore_img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 747px) {
+    ul.bottomnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e1e1e;
+        position: absolute;
+        left: 22%;
+        top: 611px;
+        width: 80%;
+        display: none;
+    }
+}

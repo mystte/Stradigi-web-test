@@ -1,0 +1,80 @@
+/* Main top menu div*/
+@media only screen and (max-width: 1982px) {
+    div#top_menu {
+        position: absolute;
+        top: 0;
+        left: 15%;
+    }
+
+    /* Align horizontally the elements*/
+    div#top_menu div {
+    	float: left;
+    }
+
+    /* Setup spider position */
+    div#spider {
+        margin-left: 700px;
+        position: absolute;
+        top: -164px;
+    }
+
+    /* Top menu items */
+    ul.topitems {
+    	list-style-type: none;
+    	overflow: hidden;
+    	position: absolute;
+    	top: 0;
+    	left: -47px;
+    }
+
+    /* Float the list items side by side */
+    ul.topitems li {
+    	float: left;
+    	margin-left: 16px;
+    	-ms-transform: rotate(-12deg);
+    	-webkit-transform: rotate(-12deg);
+    	transform: rotate(-12deg);
+    	height: 90px;
+    	padding-top: 5px;
+    }
+
+    /* Style the links inside the list items */
+    ul.topitems li a {
+        display: inline-block;
+        color: #bca41e;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 16px;
+        height: 100px;
+    }
+
+    /* Hide the list item that contains the link that should open and close the topnav on small screens */
+    ul.topitems li.icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 982px) {
+    /* Main top menu div*/
+    div#top_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 747px) {
+    /* Main top menu div*/
+    div#top_menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    div#spider {
+        margin-left: 612px;
+        position: absolute;
+        top: -164px;
+    }
+}
