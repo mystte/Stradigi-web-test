@@ -7,7 +7,6 @@ function close_modal() {
 }
 
 var slide_index = 1;
-show_slides(slide_index);
 
 function plus_slides(n) {
   show_slides(slide_index += parseInt(n));

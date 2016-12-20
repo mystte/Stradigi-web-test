@@ -14,9 +14,9 @@
   	<?php include 'views/top_menu.php';?>
   	<div id="main">
   		<?php include 'views/lightbox.php';?>
-  		<div id="scrollable">
 	  		<?php
 	  			if ($images != -1) {
+	  				echo('<div id="scrollable">');
 	  				for ($i = 0; $i < count($images); $i++) {
 	  					$thumbnail = $images[$i]['thumbnail'];
 	  					$full_size = $images[$i]['full'];
@@ -26,8 +26,8 @@
 	  					echo('<p class="img-title">'.$title.'</p></div>');
 	  				}
 	  			}
+	  			echo('</div>');
 	  		?>
-  		</div>
   	</div>
   	<?php include 'views/footer.php';?>
   </body>
